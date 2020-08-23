@@ -4,6 +4,7 @@
     --accent-color: #2196F3;
     --primery-white-color: #FFFFFF;
     --secondary-text-color: rgba(255, 255, 255, 0.6);
+    --background-color: #2F303A;
 
     /* var */
 }
@@ -26,38 +27,70 @@ ul {
 /* Hero */
 .hero-title {
     color: var(--primery-white-color);
+    background-color: var(--background-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+/* Button */ 
+
+.button {
+    color: var(--primery-white-color);
+    background-color: var(--accent-color);
+    font-size: 16px;
+    line-height: 1,87;
+    text-decoration: none;
 }
 
 /* Section */
 .section-title {
-   color: var(--title-text-color);
+    color: var(--title-text-color);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
 }
 
 /* Features */
 
 .feature-list .title {
     color: var(--title-text-color);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+ }
+
+.feature-list .text {
+    color: var(--primery-text-color);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1,71;
 }
- 
+
+
 /* Team */
 
 .team-list .title {
-    color: var(--title-text-color)
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.team-list .text {
+    color: var(--primery-text-color);
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.18;
 }
 
 .background {
     background-color: #F5F4FA;
 }
 
-/* Button */ 
 
-.button {
-    color: var(--primery-white-color);
-    background-color: var(--accent-color);
-}
 
-.button .primery {
-     color: var(--primery-white-color);
-    background-color: var(--accent-color)
-} 
+
 
