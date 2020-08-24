@@ -29,12 +29,12 @@ ul {
     background-color: var(--primery-white-color);
 }
 
-.logo {
+.page-header .logo {
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
-    font-weight: bold;
+    font-weight: 200;
     font-size: 26px;
-    line-height: 1.2;
+    line-height: 1.19;
     text-decoration: none;
 }
 
@@ -76,36 +76,42 @@ ul {
 .footer{
     background-color: var(--footer-background-color)
 }
-.logo-accent {
+.footer .logo {
+     color: var(--title-text-color);
+    font-family: Raleway, sans-serif;
+    font-weight: 200;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.footer .logo-accent
+{
     color: var(--accent-color);
+}
+
+
+.post-address .link {
     font-style: normal;
-    font-family: Raleway, sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
 }
-
-.logo-accent-secondary {
-    color: var(--primery-white-color);
-    font-family: Raleway, sans-serif;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
-}
-
 .post-address {
     color: var(--primery-white-color);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
 }
 
- .footer-link {
+
+ .footer .link {
     color: var(--secondary-text-color);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 1.71;
     text-decoration: none;
+}
+
+.footer .secondary {
+    color: #FFFFFF;
+}
+
+.contact .link:hover,
+.contact .link:focus{
+    color: var(--accent-color);
 }
