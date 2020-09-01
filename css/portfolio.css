@@ -9,6 +9,16 @@
     /* var */
 }
 
+ html{
+    box-sizing: border-box;
+   }
+
+   *,
+   *::before,
+   *::after {
+       box-sizing: inherit;
+   }
+
 body {
     background-color: var(--primery-white-color);
     font-family: Roboto, sans-serif;
@@ -25,6 +35,9 @@ ul {
     list-style: none; 
  }
 
+ /* .button {
+    min-width: 73px;
+ } */
  .button .primary{
     color: var(--primery-white-color);
     background-color: var(--accent-color);
@@ -36,6 +49,7 @@ ul {
  }
 
  .list .title {
+    margin-top: 0;
     color: var(--title-text-color);
     font-weight: bold;
     font-size: 18px;
@@ -43,6 +57,7 @@ ul {
  }
 
  .list .text {
+    margin-top: 0;
     color: var(--primery-text-color);
     font-weight: normal;
     font-size: 16px;

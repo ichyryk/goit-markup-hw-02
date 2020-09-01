@@ -7,6 +7,15 @@
     --footer-background-color: #2F303A;
     /* var */
 }
+ html{
+    box-sizing: border-box;
+ }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+   }
 
 body {
     background-color: var(--primery-white-color);
@@ -20,16 +29,19 @@ body {
 /* белый #FFFFFF /*
 /* background #2F303A (black) ,#E5E5E5 (white), #F5F4FA (blue) */
 
-ul {
-    list-style: none;
+/* Утилиты */
+
+.list {
+   margin: 0;
 }
+
 /* Site header */
 
 .page-header {
     background-color: var(--primery-white-color);
 }
 
-.page-header .logo {
+.logo {
     color: var(--title-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 200;
@@ -38,14 +50,45 @@ ul {
     text-decoration: none;
 }
 
-.page-header .logo-accent {
+
+.logo-accent {
     color: var(--accent-color);
 }
 
+/* Main nav */
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+
 /* Site nav */
+
+.site-nav{
+    display: flex;
+    margin-left: 93px;
+}
+.site-nav .item{
+    margin-bottom: 32px;
+    margin-left: 93px;
+
+}
+/* .site-nav .item:last-child {
+    margin-right: 0;
+} */
+
+/* .site-nav .item:not(:last-child) {
+    margin-right: ;
+} */
+
+.site-nav .item + .item{
+    margin-left: 50px;
+}
 
 .site-nav .link{
     color: var(--title-text-color);
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -62,7 +105,20 @@ ul {
     color: var(--accent-color);
 }
 
+
+ /* Contact */
+
+.contact {
+     display: flex;
+     margin-left: auto;
+}
+
+.contact .item + .item{
+    margin-left: 50px;
+}
+
 .contact .link{
+   
     color: var(--primery-text-color);
     text-decoration: none;
 }
